@@ -1,0 +1,1638 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/newproject_scrollView">
+
+    <RelativeLayout
+        android:id="@+id/newproject_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="25dp"
+        tools:context="android.app.printerapp.NewPrintJobFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/preprinting_relativeLayout">
+
+            <Button
+                android:id="@+id/preprinting_expand_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pre Printing"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorPrimaryDark"
+                android:drawableRight="@drawable/expand"/>
+
+            <EditText
+                android:id="@+id/projectID_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/preprinting_expand_button"
+                android:layout_toEndOf="@+id/projectID_textView"
+                android:layout_toRightOf="@+id/projectID_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingBottom="30dp"
+                android:textSize="10pt"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/projectID_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/projectID_editText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="Project Number:"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/projectAcronym_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/partnumber_editText"
+                android:layout_alignParentStart="true"
+                android:text="Project Acronym:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/projectAcronym_Edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/projectID_editText"
+                android:layout_toEndOf="@+id/projectAcronym_textView"
+                android:layout_toRightOf="@+id/projectAcronym_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingBottom="40dp"
+                android:textSize="10pt"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/partnumber_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/buildId_textView"
+                android:layout_alignParentStart="true"
+                android:text="Unique Parts(separated by comma):"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/partnumber_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/projectAcronym_Edittext"
+                android:layout_toEndOf="@+id/partnumber_textView"
+                android:layout_toRightOf="@+id/partnumber_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingBottom="40dp"
+                android:textSize="10pt"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/buildId_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/buildId_editText"
+                android:layout_marginTop="47dp"
+                android:paddingBottom="40dp"
+                android:text="Build Id:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/buildId_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/partnumber_editText"
+                android:layout_toEndOf="@+id/buildId_textView"
+                android:layout_toRightOf="@+id/buildId_textView"
+                android:ems="10"
+                android:inputType="number"
+                android:paddingBottom="40dp"
+                android:textSize="10pt"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/numberparts_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/buildId_textView"
+                android:layout_marginTop="20dp"
+                android:text="Number of Parts:"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/numberofparts_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/prinringparameters_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/numberparts_textView"
+                android:layout_toRightOf="@+id/numberparts_textView"
+                android:ems="10"
+                android:inputType="number"
+                android:paddingBottom="40dp"
+                android:textSize="10pt"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/prinringparameters_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/numberparts_textView"
+                android:text="Printing Parameters:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"/>
+
+            <EditText
+                android:id="@+id/printingparameters_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/prinringparameters_textView"
+                android:layout_toEndOf="@+id/prinringparameters_textView"
+                android:layout_toRightOf="@+id/prinringparameters_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingBottom="40dp"
+                android:textSize="10pt"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/coment_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:text="Comments:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/comment_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/prinringparameters_textView"
+                android:layout_toEndOf="@+id/coment_textView"
+                android:layout_toRightOf="@+id/coment_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingBottom="40dp"
+                android:textSize="10pt"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/preprinting_relativeLayout"
+            android:id="@+id/printing_relativeLayout">
+
+            <Button
+                android:id="@+id/Printing_expand_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="40dp"
+                android:text="Printing"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/colorWhite"
+                android:drawableRight="@drawable/expand"/>
+
+            <TextView
+                android:id="@+id/slmid_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/Printing_expand_button"
+                android:layout_marginTop="50dp"
+                android:text="SLM ID:"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/slmid_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/Printing_expand_button"
+                android:layout_toEndOf="@+id/slmid_textView"
+                android:layout_toRightOf="@+id/slmid_textView"
+                android:ems="10"
+                android:inputType="none"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/starttime_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/slmid_editText"
+                android:layout_marginTop="50dp"
+                android:text="Start Time:"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/starttime_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/starttime_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/starttime_textView"
+                android:layout_toRightOf="@+id/starttime_textView"
+                android:ems="10"
+                android:focusable="false"
+                android:clickable="true"
+                android:inputType="none"
+                android:gravity="center"
+                android:drawableRight="@drawable/time"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/endtime_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/starttime_textView"
+                android:layout_marginTop="50dp"
+                android:text="End Time:"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/endtime_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/endtime_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/endtime_textView"
+                android:layout_toRightOf="@+id/endtime_textView"
+                android:ems="10"
+                android:focusable="false"
+                android:clickable="true"
+                android:inputType="none"
+                android:gravity="center"
+                android:drawableRight="@drawable/time"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/date_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/endtime_textView"
+                android:layout_marginTop="50dp"
+                android:text="Date:"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/date_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/date_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/date_textView"
+                android:layout_toRightOf="@+id/date_textView"
+                android:ems="10"
+                android:focusable="false"
+                android:clickable="true"
+                android:inputType="none"
+                android:gravity="center"
+                android:drawableRight="@drawable/calandar"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/operator_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_textView"
+                android:layout_marginTop="50dp"
+                android:text="Operator:"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/search_result_operator_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/operator_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/operator_textView"
+                android:layout_toRightOf="@+id/operator_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/typeofmachine_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/operator_textView"
+                android:layout_marginTop="50dp"
+                android:text="Type of Machine:"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/typeofmachine_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/typeofmachine_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/typeofmachine_textView"
+                android:layout_toRightOf="@+id/typeofmachine_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/powderweight_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/typeofmachine_textView"
+                android:layout_marginTop="50dp"
+                android:text="Big Canister at start (gram):"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/powderweight_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/powderweight_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/powderweight_textView"
+                android:layout_toRightOf="@+id/powderweight_textView"
+                android:ems="10"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/recycle_start_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/powderweightatEnd_editText"
+                android:layout_marginTop="50dp"
+                android:text="Left Recycle at start (gram):"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/recycle_start_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/recycle_start_left"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/recycle_start_left"
+                android:layout_toRightOf="@+id/recycle_start_left"
+                android:ems="10"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/recycle_end_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recycle_start_left"
+                android:layout_marginTop="50dp"
+                android:text="Left Recycle at end (gram):"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/recycle_end_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/recycle_end_left"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/recycle_end_left"
+                android:layout_toRightOf="@+id/recycle_end_left"
+                android:ems="10"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/right_recycle_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recycle_end_left"
+                android:layout_marginTop="50dp"
+                android:text="Right Recycle at start (gram):"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/right_recycle_start_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/right_recycle_start"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/right_recycle_start"
+                android:layout_toRightOf="@+id/right_recycle_start"
+                android:ems="10"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/right_recycle_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/right_recycle_start_edit"
+                android:layout_marginTop="50dp"
+                android:text="Right Recycle at end (gram):"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/right_recycle_end_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/right_recycle_end"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/right_recycle_end"
+                android:layout_toRightOf="@+id/right_recycle_end"
+                android:ems="10"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/powderweightatEnd_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/powderweight_editText"
+                android:layout_marginTop="50dp"
+                android:text="Big Canister at end (gram):"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/powderweightatEnd_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/powderweightatEnd_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/powderweightatEnd_textView"
+                android:layout_toRightOf="@+id/powderweightatEnd_textView"
+                android:ems="10"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/powderused_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buildplatform_editText"
+                android:layout_marginTop="50dp"
+                android:text="Build Platform Weight at end(gram):"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/powderused_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/powderused_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/powderused_textView"
+                android:layout_toRightOf="@+id/powderused_textView"
+                android:ems="10"
+                android:inputType="none"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/powderwaste_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/powderused_editText"
+                android:layout_marginTop="50dp"
+                android:text="Powder Waste:"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/powderwaste_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/powderwaste_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/powderwaste_textView"
+                android:layout_toRightOf="@+id/powderwaste_textView"
+                android:ems="10"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+
+            <TextView
+                android:id="@+id/material_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/powderwaste_textView"
+                android:layout_marginTop="50dp"
+                android:text="Material:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/material_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/material_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/material_textView"
+                android:layout_toRightOf="@+id/material_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/buildplatform_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/right_recycle_end_edit"
+                android:layout_marginTop="50dp"
+                android:text="Build Platform Weight at start(gram):"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/buildplatform_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/buildplatform_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/buildplatform_textView"
+                android:layout_toRightOf="@+id/buildplatform_textView"
+                android:ems="10"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/printTune_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/material_textView"
+                android:layout_marginTop="50dp"
+                android:text="Calculated Print Time:"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/printTune_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/printTune_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/printTune_textView"
+                android:layout_toRightOf="@+id/printTune_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/powderCondition_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/printTune_textView"
+                android:layout_marginTop="50dp"
+                android:text="Powder Condition:"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <Spinner
+                android:id="@+id/powderCondition_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/powderCondition_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/powderCondition_textView"
+                android:layout_toRightOf="@+id/powderCondition_textView"
+                android:ems="10"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/if_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/powderCondition_textView"
+                android:layout_marginTop="50dp"
+                android:text="How many times:"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/if_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/if_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/if_textView"
+                android:layout_toRightOf="@+id/if_textView"
+                android:ems="10"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/numberofLayers_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/if_textView"
+                android:layout_marginTop="50dp"
+                android:text="Number of Layers:"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/numberofLayers_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/numberofLayers_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/numberofLayers_textView"
+                android:layout_toRightOf="@+id/numberofLayers_textView"
+                android:ems="10"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/dpcFactor_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/numberofLayers_textView"
+                android:layout_marginTop="50dp"
+                android:text="DPC Factor:"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/dpcFactor_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/dpcFactor_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/dpcFactor_textView"
+                android:layout_toRightOf="@+id/dpcFactor_textView"
+                android:ems="10"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/minExposureTime_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dpcFactor_textView"
+                android:layout_marginTop="50dp"
+                android:text="Min Exposure Time:"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/minExposureTime_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/minExposureTime_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/minExposureTime_textView"
+                android:layout_toRightOf="@+id/minExposureTime_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/printingComments_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/minExposureTime_textView"
+                android:layout_marginTop="50dp"
+                android:text="Comments:"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/printingComments_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/printingComments_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/printingComments_textView"
+                android:layout_toRightOf="@+id/printingComments_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/printing_relativeLayout"
+            android:id="@+id/posprinting_relativeLayout">
+
+            <Button
+                android:id="@+id/posprinting_expand_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="40dp"
+                android:text="Post-Printing"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/colorWhite"
+                android:drawableRight="@drawable/expand"/>
+
+
+            <TextView
+                android:id="@+id/supportRemoval_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/posprinting_expand_button"
+                android:layout_marginTop="50dp"
+                android:text="Support Removal:"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <Spinner
+                android:id="@+id/supportRemoval_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/supportRemoval_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/supportRemoval_textView"
+                android:layout_toRightOf="@+id/supportRemoval_textView"
+                android:ems="10"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/WEDM_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/supportRemoval_textView"
+                android:layout_marginTop="50dp"
+                android:text="WEDM:"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/WEDM_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/WEDM_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/WEDM_textView"
+                android:layout_toRightOf="@+id/WEDM_textView"
+                android:ems="10"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/WEDMcomments_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/WEDM_textView"
+                android:layout_marginTop="50dp"
+                android:text="WEDM Comments:"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/WEDMcomments_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/WEDMcomments_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/WEDMcomments_textView"
+                android:layout_toRightOf="@+id/WEDMcomments_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/blasting_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/WEDMcomments_textView"
+                android:layout_marginTop="50dp"
+                android:text="Blasting:"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/blasting_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/blasting_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/blasting_textView"
+                android:layout_toRightOf="@+id/blasting_textView"
+                android:ems="10"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/blastingType_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/blasting_textView"
+                android:layout_marginTop="50dp"
+                android:text="Blasting Type:"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/blastingType_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/blastingType_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/blastingType_textView"
+                android:layout_toRightOf="@+id/blastingType_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/blastingTime_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/blastingType_textView"
+                android:layout_marginTop="50dp"
+                android:text="Blasting Time:"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/blastingTime_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/blastingTime_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/blastingTime_textView"
+                android:layout_toRightOf="@+id/blastingTime_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/blastingComment_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/blastingTime_textView"
+                android:layout_marginTop="50dp"
+                android:text="Blasting Comment:"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/blastingComment_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/blastingComment_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/blastingComment_textView"
+                android:layout_toRightOf="@+id/blastingComment_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/heatTreatment_textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/blastingComment_editText"
+                android:layout_marginTop="50dp"
+                android:text="Heat Treatment(Material Dependant):"
+                android:textSize="18sp"
+                android:background="@color/colorlightGreen"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/stressRelieving_textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/heatTreatment_textView"
+                android:layout_marginTop="30dp"
+                android:text="Stress Relieving:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/stressTemp_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stressRelieving_textView"
+                android:layout_marginTop="50dp"
+                android:text="Temperature:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/stressTemp_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/stressTemp_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/stressTemp_textView"
+                android:layout_toRightOf="@+id/stressTemp_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/stressTime_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stressTemp_textView"
+                android:layout_marginTop="50dp"
+                android:text="Time:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/stressTime_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/stressTime_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/stressTime_textView"
+                android:layout_toRightOf="@+id/stressTime_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/stressShieldingGas_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stressTime_textView"
+                android:layout_marginTop="50dp"
+                android:text="Shielding gas:"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/shielding_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/stressShieldingGas_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/stressShieldingGas_textView"
+                android:layout_toRightOf="@+id/stressShieldingGas_textView"
+                android:ems="10"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/stressComment_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stressShieldingGas_textView"
+                android:layout_marginTop="50dp"
+                android:text="Comment:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/stressComment_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/stressComment_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/stressComment_textView"
+                android:layout_toRightOf="@+id/stressComment_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/hardening_textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/stressComment_textView"
+                android:layout_marginTop="50dp"
+                android:text="Hardening:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/hardeningTemp_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hardening_textView"
+                android:layout_marginTop="50dp"
+                android:text="Temperature:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/hardeningTemp_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/hardeningTemp_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/hardeningTemp_textView"
+                android:layout_toRightOf="@+id/hardeningTemp_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/hardeningTime_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hardeningTemp_textView"
+                android:layout_marginTop="50dp"
+                android:text="Time:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/hardeningTime_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/hardeningTime_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/hardeningTime_textView"
+                android:layout_toRightOf="@+id/hardeningTime_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/hardeningComment_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hardeningTime_textView"
+                android:layout_marginTop="50dp"
+                android:text="Comment:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/hardeningComment_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/hardeningComment_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/hardeningComment_textView"
+                android:layout_toRightOf="@+id/hardeningComment_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tempering_textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/hardeningComment_textView"
+                android:layout_marginTop="50dp"
+                android:text="Tempering:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/temperingTemp_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tempering_textView"
+                android:layout_marginTop="50dp"
+                android:text="Temperature:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/temperingTemp_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/temperingTemp_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/temperingTemp_textView"
+                android:layout_toRightOf="@+id/temperingTemp_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/temperingTime_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/temperingTemp_textView"
+                android:layout_marginTop="50dp"
+                android:text="Time:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/temperingTime_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/temperingTime_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/temperingTime_textView"
+                android:layout_toRightOf="@+id/temperingTime_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/temperingNumberofCycles_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/temperingTime_textView"
+                android:layout_marginTop="50dp"
+                android:text="No of Cycles:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/temperingNumberofCycles_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/temperingNumberofCycles_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/temperingNumberofCycles_textView"
+                android:layout_toRightOf="@+id/temperingNumberofCycles_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/temperingComment_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/temperingNumberofCycles_textView"
+                android:layout_marginTop="50dp"
+                android:text="Comment:"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/temperingComment_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/temperingComment_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/temperingComment_textView"
+                android:layout_toRightOf="@+id/temperingComment_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/solutionTreatment_textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/temperingComment_textView"
+                android:layout_marginTop="50dp"
+                android:text="Solution Treatment:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/solutionTreatmentTemp_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/solutionTreatment_textView"
+                android:layout_marginTop="50dp"
+                android:text="Temperature:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/solutionTreatmentTemp_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/solutionTreatmentTemp_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/solutionTreatmentTemp_textView"
+                android:layout_toRightOf="@+id/solutionTreatmentTemp_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/solutionTreatmentTime_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/solutionTreatmentTemp_textView"
+                android:layout_marginTop="50dp"
+                android:text="Time:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/solutionTreatmentTime_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/solutionTreatmentTime_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/solutionTreatmentTime_textView"
+                android:layout_toRightOf="@+id/solutionTreatmentTime_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/solutionTreatmentComment_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/solutionTreatmentTime_textView"
+                android:layout_marginTop="50dp"
+                android:text="Comment:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/solutionTreatmentComment_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/solutionTreatmentComment_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/solutionTreatmentComment_textView"
+                android:layout_toRightOf="@+id/solutionTreatmentComment_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/agingTreatment_textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/solutionTreatmentComment_textView"
+                android:layout_marginTop="50dp"
+                android:text="Aging Treatment:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/agingTemp_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/agingTreatment_textView"
+                android:layout_marginTop="50dp"
+                android:text="Temperature:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/agingTemp_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/agingTemp_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/agingTemp_textView"
+                android:layout_toRightOf="@+id/agingTemp_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/agingTime_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/agingTemp_textView"
+                android:layout_marginTop="50dp"
+                android:text="Time:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/agingTime_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/agingTime_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/agingTime_textView"
+                android:layout_toRightOf="@+id/agingTime_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/agingNumberofCycles_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/agingTime_textView"
+                android:layout_marginTop="50dp"
+                android:text="No of Cycles:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/agingNumberofCycles_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/agingNumberofCycles_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/agingNumberofCycles_textView"
+                android:layout_toRightOf="@+id/agingNumberofCycles_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/agingComment_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/agingNumberofCycles_textView"
+                android:layout_marginTop="50dp"
+                android:text="Comment:"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/agingComment_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/agingComment_textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/agingComment_textView"
+                android:layout_toRightOf="@+id/agingComment_textView"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                android:textSize="10pt"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/posprinting_relativeLayout"
+            android:id="@+id/uploadfiles_insert"
+            android:layout_marginBottom="40dp">
+            <Button
+                android:id="@+id/upload_stl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@mipmap/ic_file_upload_black_48dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:background="@drawable/shadow"
+                android:layout_weight="1.0"
+                android:textSize="18sp"
+                android:text="Upload your STL model"
+                tools:text="Upload your STL model" />
+
+            <Button
+                android:id="@+id/upload_cad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@mipmap/ic_file_upload_black_48dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:background="@drawable/shadow"
+                android:layout_weight="1.0"
+                android:textSize="18sp"
+                android:text="Upload your CAD file"
+                tools:text="Upload your CAD file" />
+            <Button
+                android:id="@+id/upload_postprinting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@mipmap/ic_file_upload_black_48dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:background="@drawable/shadow"
+                android:layout_weight="1.0"
+                android:textSize="18sp"
+                android:text="Upload your Snapshot of printjob"
+                tools:text="Upload your Snapshot" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/postprint_preview"
+            android:layout_below="@+id/uploadfiles_insert"
+            android:layout_marginBottom="40dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/post_print_snapshot"
+                android:src="@drawable/no_magic"
+                android:layout_marginBottom="10dp"/>
+        </RelativeLayout>
+        <ProgressBar
+            android:id="@+id/newprintjob_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/postprint_preview"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+        <Button
+            android:id="@+id/submit_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newprintjob_progress"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="@color/colorWhite"
+            android:text="Submit" />
+
+    </RelativeLayout>
+</ScrollView>
+

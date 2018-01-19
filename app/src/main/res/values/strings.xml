@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PrintBook</string>
+    <string name="about_app_name" translatable="false">OctoPrint 3d bq printer controller</string>
+    <string name="about_url" translatable="false">http://www.octoprint.org</string>
+
+    <string name="lorem_ipsum" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
+
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+    <string name="confirm">Confirm</string>
+    <string name="search">Search</string>
+    <string name="create">Create</string>
+    <string name="delete">Delete</string>
+    <string name="warning">Warning</string>
+    <string name="save">Save</string>
+    <string name="discard">Discard</string>
+    <string name="dialog_continue">Continue</string>
+
+    <string name="password">Password</string>
+    <string name="show_password">Show password</string>
+    <string name="empty_password_error">Password can\'t be empty</string>
+
+    <string name="fragment_print">Panel</string>
+    <string name="fragment_models">Models</string>
+    <string name="fragment_history">History</string>
+    <string name="fragment_settings">Settings</string>
+
+
+    <string name="devices_text_loading">Uploading&#8230;</string>
+
+    <string name="devices_menu_add">Add printer</string>
+    <string name="devices_menu_filter">Filter devices</string>
+
+    <string name="devices_discovery_title">Configuring new printer</string>
+    <string name="devices_discovery_toast_error">There was an error configuring the printer, try again</string>
+    <string name="devices_discovery_toast_success">Printer configured successfully! </string>
+
+    <string name="devices_configure_wifi_title">Associate the printer to the wifi network</string>
+    <string name="devices_configure_wifi_content">Select the wifi network you want to associate this device.</string>
+    <string name="devices_configure_waiting">Waiting for service&#8230;</string>
+
+    <string name="devices_edit_port">Port</string>
+
+    <string name="devices_color_keep_color">Keep current color</string>
+    <string name="devices_color_default">Default</string>
+    <string name="devices_color_red">Red</string>
+    <string name="devices_color_orange">Orange</string>
+    <string name="devices_color_yellow">Yellow</string>
+    <string name="devices_color_green">Green</string>
+    <string name="devices_color_blue">Blue</string>
+    <string name="devices_color_violet">Violet</string>
+    <string name="devices_color_black">Black</string>
+
+    <string name="printview_menu_add">Add model</string>
+
+    <string name="printview_searching_networks_dialog_title">Add new printer</string>
+    <string name="printview_searching_networks_dialog_content">Searching networks&#8230;</string>
+    <string name="printview_searching_networks_dialog_noresults">No results. Try again?</string>
+
+    <string name="devices_toast_no_stl">No .stl found</string>
+    <string name="storage_toast_corrupted">File is corrupted</string>
+    <string name="viewer_toast_not_available_2">This view is not available. Open a file first</string>
+
+    <string name="library_search_dialog_title">Search keyword</string>
+
+    <string name="library_create_dialog_title">Create new folder</string>
+    <string name="library_create_folder_name">New folder name</string>
+    <string name="library_create_folder_name_error">The name can\'t be empty</string>
+    <string name="library_select_printer_title">Print file: </string>
+    <string name="library_select_printer">Select printer</string>
+    <string name="library_option_print">Send to printer</string>
+    <string name="library_option_edit">Edit</string>
+    <string name="library_option_move">Move</string>
+    <string name="library_paste_toast">Select "Paste" in the menu</string>
+    <string name="library_delete_dialog_original">Do you want to delete the original file?</string>
+    <string name="library_print_model">View</string>
+    <string name="library_quick_print_model" translatable="false">Quick View</string>
+
+    <string name="library_menu_refresh">Refresh models</string>
+    <string name="library_menu_search">Search model</string>
+    <string name="library_menu_scan">Scan device</string>
+    <string name="download">Download</string>
+    <string name="library_menu_sort">Sort by</string>
+    <string name="library_menu_add">Add model</string>
+    <string name="library_menu_folder">New folder</string>
+    <string name="library_menu_paste">Paste</string>
+    <string name="library_menu_models">Get models</string>
+
+    <string name="library_models_all">All the models</string>
+    <string name="library_models_local">Local</string>
+    <string name="library_models_favorites">Favorites</string>
+    <string name="library_get_models_title">Get models</string>
+    <plurals name="library_models_delete_title">
+        <item quantity="one">Remove the file</item>
+        <item quantity="other">Remove files</item>
+    </plurals>
+    <plurals name="library_models_delete">
+        <item quantity="one">Are you sure to delete the file?</item>
+        <item quantity="other">Are you sure to delete the selected files?</item>
+    </plurals>
+    <string name="library_menu_models_delete_undo">This action can not be undone</string>
+    <string name="library_menu_models_delete_files">%1$d files</string>
+
+    <string name="library_list_go_back_tag">Go back</string>
+
+    <string name="library_thingiverse_url" translatable="false">http://www.thingiverse.com/</string>
+    <string name="library_youmagine_url" translatable="false">https://www.youmagine.com/</string>
+
+    <string name="viewer_menu_open">Open file</string>
+    <string name="viewer_menu_save">Save</string>
+    <string name="viewer_menu_restore">Restore panel</string>
+    <string name="viewer_menu_clean">Clean panel</string>
+    <string name="viewer_menu_multiply_title">Multiply model</string>
+
+    <string name="viewer_slice_wait">Wait for the file to slice</string>
+    <string name="viewer_printer_unavailable">No available printers for the selected type</string>
+    <string name="viewer_printer_selected">Printer is busy</string>
+    <string name="viewer_multiply_error">No more models can be added to the plate</string>
+
+    <string name="viewer_save_model">Do you want to save this model?</string>
+    <string name="viewer_save_model_name">Model name</string>
+    <string name="viewer_save_model_stl">Save as stl</string>
+    <string name="viewer_save_model_gcode">Save as gcode</string>
+    <string name="viewer_save_model_override">Overwrite original</string>
+
+    <string name="settings_general">General</string>
+    <string name="settings_devices">Devices</string>
+    <string name="settings_about">About</string>
+    <string name="settings_push_notifications">Push notifications</string>
+    <string name="settings_slicing">Slicing</string>
+    <string name="settings_print">Printing</string>
+    <string name="settings_save_files">Save all the printed files in the device</string>
+    <string name="settings_network">Wireless network</string>
+    <string name="settings_printers">Linked devices</string>
+    <string name="settings_add_title">Add new printer</string>
+    <string name="settings_edit_name">Edit printer</string>
+    <string name="settings_default_color">Keep current color</string>
+    <string name="settings_profile_delete">If you delete this profile, all printers that share it will be unconfigured.\nYou can configure them again in the Devices panel.</string>
+
+    <string name="viewer_button_undo">Undo</string>
+    <string name="viewer_button_redo">Redo</string>
+
+    <string name="choose_file">Choose File</string>
+
+    <string name="loading_stl">Loading STL file</string>
+    <string name="loading_gcode">Loading GCode file</string>
+
+    <string name="be_patient">Please, be patient. It may take a while</string>
+    <string name="error_opening_invalid_file">Invalid file. Try again.</string>
+    <string name="error_saving_invalid_model">Print Panel is empty. Open and edit a file and try again.</string>
+
+    <string name="ok">OK</string>
+    <string name="proyect_name_not_available">That name exists! Please, choose another name</string>
+    <string name="generating_project">Generating project</string>
+    <string name="generating_screenshot">Generating screenshot&#8230;</string>
+
+    <string name="viewer_file_size">The model you are trying to load is too big. If you continue the application may run out of memory and crash.</string>
+    <string name="viewer_progress_time">"ESTIMATED TIME:  "</string>
+    <string name="viewer_open_gcode_dialog">You will lose any unsaved data. Continue?</string>
+    <string name="library_scan_dialog_title">Add files</string>
+    <string name="library_scan_dialog_nomodels">No models found on your device</string>
+
+    <string name="shared_preferences_save" translatable="false">save</string>
+    <string name="shared_preferences_slice" translatable="false">slice</string>
+    <string name="shared_preferences_print" translatable="false">print</string>
+    <string name="shared_preferences_autoslice" translatable="false">autoslice</string>
+    <string name="option_unavailable">Option unavailable</string>
+    <string name="share_subject_text">Shared model</string>
+    <string name="share_content_text">I want to share this model with you!</string>
+    <string name="share_via_text">Share via</string>
+    <string name="library_empty_text">You still don\'t have any 3D models added, use the buttons to download new models or to perform a search within your device.</string>
+    <string name="viewer_create_profile_text">New profile name</string>
+    <string name="viewer_create_profile_default" translatable="false">custom_profile</string>
+    <string name="dialog_create_profile_title">Create new profile</string>
+    <string name="history_drawer_print_time">Print time:\u0020</string>
+    <string name="history_empty_text">The printing history is empty</string>
+
+    <string name="print_panel_x_axis" translatable="false">X =</string>
+    <string name="print_panel_y_axis" translatable="false">Y =</string>
+    <string name="print_panel_z_axis" translatable="false">Z =</string>
+    <string name="print_panel_mm_axis" translatable="false">&#032;mm</string>
+    <string name="library_menu_sort_by_name">Name</string>
+    <string name="library_menu_sort_by_date">Recent</string>
+    <string name="library_menu_sort_by_size">Size</string>
+    <string name="dialog_add_printer_address">Printer IP address</string>
+    <string name="dialog_add_printer_timeout">Connection taking longer than usual, reconnecting to previous network</string>
+    <string name="dialog_printer_manual_add">Add manually</string>
+    <string name="printview_profiles_overwrite">Profile overwritten</string>
+    <string name="manual_add_octoprint_key" translatable="false">OctoPrint Api Key</string>
+    <string name="about_feedback_url" translatable="false">https://github.com/bq/OctoPrintApp</string>
+    <string name="manual_add_error_address">Address can\'t be empty</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="welcome">Welcome To Swerea!</string>
+    <string name="visual">visual the STL model</string>
+    <string name="fetch">fetch the model</string>
+    <string name="upload">upload the STL model</string>
+    <string name="check">check the model</string>
+    <string name="action_settings">action_settings</string>
+    <string name="drawer_open">drawer_open</string>
+    <string name="drawer_close">drawer_close</string>
+    <string name="np">this is the new project page</string>
+
+    <string name="SLM_ID">SLM ID</string>
+    <string name="back">back</string>
+    <string name="title_activity_home_page">PrintBook</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="powder_condition_string">
+        <item>New</item>
+        <item>Reused</item>
+        <item>Mixed</item>
+    </string-array>
+
+    <string-array name="support_removal_string">
+        <item> </item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="WEDM_string">
+        <item> </item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="blasting_string">
+        <item> </item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="shielding_string">
+        <item> </item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_main">Home</string>
+    <string name="sign_up">Signup</string>
+
+    <string-array name="jobType_string">
+        <item>public</item>
+        <item>private</item>
+    </string-array>
+
+    <string-array name="users_string">
+        <item></item>
+    </string-array>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_login">Login</string>
+    <string name="action_signup">Sign up</string>
+    <string name="action_login_short">Login</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect or account not found</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <item name="visible" type="id" />
+    <item name="masked" type="id" />
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

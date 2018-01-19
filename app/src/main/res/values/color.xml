@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- GENERAL COLORS -->
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#60000000</color>
+    <color name="dark_gray">#90000000</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- THEME COLORS -->
+    <color name="theme_primary">#5BB433</color>
+    <color name="theme_primary_dark">#169300</color>
+    <color name="theme_primary_light">#557bdd3b</color>
+    <color name="almost_white">#FAFAFA</color>
+    <color name="theme_error">#f36c60</color>
+
+    <color name="pager_background">#EEEEEE</color>
+
+    <color name="body_text_1">#de000000</color>
+    <color name="body_text_2">#8a000000</color>
+    <color name="body_text_3">#60000000</color>
+
+    <color name="theme_accent_1">@color/theme_primary</color>
+
+    <color name="gray_background">#e5e5e5</color>
+    <color name="separator_background">#11000000</color>
+
+    <color name="navdrawer_text_color">@color/body_text_2</color>
+
+    <color name="navmenu_text_color">@color/body_text_2</color>
+    <color name="navmenu_text_color_selected">@color/body_text_1</color>
+
+    <color name="drag_and_drop_hover_background">@color/theme_primary_light</color>
+
+    <color name="printer_view_bottom_bar">#7e7e7e</color>
+
+    <color name="colorPrimaryBlue">#3f51b5</color>
+    <color name="colorPrimary">#81c639</color>
+    <color name="colorPrimaryDark">#5a8b28</color>
+    <color name="colorPrimaryDarkBlue">#303F9F</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="colorPrimaryGreen">#81c639</color>
+    <color name="colorPrimaryDarkGreen">#5a8b28</color>
+    <color name="colorWhite">#ffff</color>
+    <color name="colorlightGreen">#c2f2d0</color>
+    <color name="cardview_initial_background">#71C3DE</color>
+</resources>

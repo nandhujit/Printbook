@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="35dp"
+    android:layout_marginRight="35dp"
+    tools:context="android.app.printerapp.NewProjectMandatoryFragment">
+
+    <ProgressBar
+        android:id="@+id/mandatory_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+    <RelativeLayout
+        android:id="@+id/mandatoryFragment_RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mandatory_progress">
+
+        <TextView
+            android:id="@+id/SLM_ID_TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="SLM ID:" />
+
+        <EditText
+            android:id="@+id/SLM_ID_EDITTEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/SLM_ID_TEXT"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/jobType_editText"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/jobType_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SLM_ID_TEXT"
+            android:layout_marginTop="50dp"
+            android:text="Job Type:"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/jobType_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/jobType_textView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_toEndOf="@+id/jobType_textView"
+            android:layout_toRightOf="@+id/jobType_textView"
+            android:ems="10"
+            android:layout_marginLeft="25dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_marginTop="50dp"/>
+
+    </RelativeLayout>
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView_users"
+        android:layout_below="@+id/mandatoryFragment_RelativeLayout"
+        android:layout_marginTop="40dp">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/linearlayout_users"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+    </HorizontalScrollView>
+    <RelativeLayout
+        android:id="@+id/upload_magic_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/scrollView_users">
+
+        <Button
+            android:id="@+id/magic_upload_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:drawableEnd="@drawable/upload"
+            android:gravity="center"
+            android:layout_marginLeft="110dp"
+            android:ems="42"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Upload Magic File"
+            android:layout_marginTop="0dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/saveContinue_RelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upload_magic_layout"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true">
+
+    <Button
+        android:id="@+id/create_printjob_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="@color/colorWhite"
+        android:text="Save"></Button>
+
+    <Button
+        android:id="@+id/create_printjob_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/create_printjob_save"
+        android:layout_weight="1"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="@color/colorWhite"
+        android:layout_marginLeft="5dp"
+        android:text="Continue"></Button>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/magic_image_view"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/saveContinue_RelativeLayout"
+        android:layout_weight="1"
+        android:contentDescription="IMAGE MAGIC FILE"
+        android:layout_marginBottom="50dp">
+    </ImageView>
+</RelativeLayout>

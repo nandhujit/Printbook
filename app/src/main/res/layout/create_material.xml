@@ -1,0 +1,997 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffff"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context="android.app.printerapp.CreatematerialFragment">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Create material"
+                android:textColor="#5a8b28"
+                android:textSize="33sp"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <Button
+                android:id="@+id/select"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#5a8b28"
+                android:text="Select the Pdf file"
+                android:textColor="#fff" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/Material_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/the_material_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the material Id"
+                    android:inputType="number"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+            </android.support.design.widget.TextInputLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <Button
+                android:id="@+id/upload_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#5a8b28"
+                android:text="Upload"
+                android:textColor="#fff" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Material Information"
+                android:textColor="#5a8b28"
+                android:textSize="33sp"
+                android:textStyle="bold" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/Mater_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_material_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter material Id"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/URL_image"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_URL_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter Url image"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/project_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_project_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter project id"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Bet Surface Information"
+                android:textColor="#5a8b28"
+                android:textSize="33sp"
+                android:textStyle="bold" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/bet_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_bet_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter bet Id"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/materialbet_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_materialbet_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter Material ID"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/url_photo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_url_photo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter url for photo"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Hallflow Information"
+                android:textColor="#5a8b28"
+                android:textSize="33sp"
+                android:textStyle="bold" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/hallflow_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_hallflow_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter hall flow id"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/materialhallflow_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_materialhallflow_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the material id"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/projecthallflow_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_projecthallflow_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the project id"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/operator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_operator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the operator name"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the date"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/humidity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_humidity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the humidity"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/temperature"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_temperature"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the temperature"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/value1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_value1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the value1"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tap1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_tap1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the tap1"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/value2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_value2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the value2"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tap2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_tap2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the tap2"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/value3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_value3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the value3"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tap3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_tap3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the tap3"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/average"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_average"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the average"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Flow Energy Information"
+                android:textColor="#5a8b28"
+                android:textSize="33sp"
+                android:textStyle="bold" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/flow_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_flow_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter hall flow id"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/materialflow_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_materialflow_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the material id"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/dateflow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_dateflow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the date"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/temperatureFlow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_temperatureFlow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the temperature value"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/humidityFlow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_humidityFlow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the humidity value"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/operatorFlow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_operatorFlow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the operator name"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/powder_condition"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_powder_condition"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the powder condition"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/reused_timeFlow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_reused_timeFlow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the reused time"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/rumblingFlow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_rumblingFlow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the value for Rumbling"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/rumbling_timesFlow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_rumbling_timesFlow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the value for rumbling times"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/bfe_mj"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_bfe_mj"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the value for bfe_mj"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/si"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_si"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the value for si"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fri"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_fri"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the value for fri"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/se_mj_g"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_se_mj_g"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the value for se_mj_g"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/cbd_g_ml"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_cbd_g_ml"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the value for cbd_g_ml"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/cetap50_mj"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_cetap50_mj"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the value for cetap50_mj"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/bdtap50_g_ml"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_bdtap50_g_ml"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the value for bdtap50_g_ml"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Shear Cell Information"
+                android:textColor="#5a8b28"
+                android:textSize="33sp"
+                android:textStyle="bold" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/shear_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_shear_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the shear id"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/projectShear_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_projectShear_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the project id"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/materialShear_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_materialShear_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the material id"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/dateShear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_dateShear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the date"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/operatorShear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_operatorShear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the operator name"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/temperatureShear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_temperatureShear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the temperature"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/humidityShear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_humidityShear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the value for humidity"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/powder_condition_shear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_powder_condition_shear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the powder condition"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/reused_times_shear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_reused_times_shear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the value for reused times"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/rumbling_shear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_rumbling_shear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the value for rumbling "
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/rumbling_timesShear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_rumbling_timesShear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the value for rumbling times"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/consolidation_pressure"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_consolidation_pressure"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the value for consolidation pressure"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/quantity_of_powder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_quantity_of_powder"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter quantity of powder"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/cohesion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_cohesion"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the value for cohesion"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/uys"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_uys"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the value for uys"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/mps"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_mps"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the value for mps"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ff"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_ff"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the value for ff"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/aif"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_aif"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the value for aif"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/bd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:ignore="InvalidId">
+                <EditText
+                    android:id="@+id/edit_bd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter the value for bd"
+                    android:inputType="text"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/submit_material"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:textStyle="bold"
+                android:background="#5a8b28"
+                android:text="SUBMIT"
+                android:textColor="#fff" />
+
+    </LinearLayout>
+</ScrollView>
